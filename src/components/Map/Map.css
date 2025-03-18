@@ -1,0 +1,13 @@
+.map-container {
+  height: 50rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 30rem;
+  }
+}

@@ -1,0 +1,33 @@
+:root {
+    /* Color palette */
+    --color-forest: #2c5f2d;
+    --color-moss: #97bc62;
+    --color-earth: #5e503f;
+    --color-stone: #a9a9a9;
+    --color-water: #0077b6;
+    
+    /* Typography */
+    --font-main: system-ui, -apple-system, sans-serif;
+    --font-heading: Georgia, serif;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+  }
