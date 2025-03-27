@@ -154,4 +154,51 @@ export const parks = [
     bestTimeToVisit: "Spring, fall, and summer",
     personalNotes: "Chicago was such a nice surprise! I loved the architecture, the vibe, and the weather (it was cold and I love the cold). People are very friendly my travel companion said the deep dish pizza was worth the hype. Definitely a city I will visit again."
   },
+  {
+    id: "rocky-mountain",
+    name: "Rocky Mountain National Park",
+    state: "Colorado",
+    established: "January 26, 1915",
+    latitude: 40.3466,
+    longitude: -105.7364,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1742394350/20241019_132934_kpygbl.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742394266/20241018_111226_k52vaf.jpg",
+        caption: "Mountains in Rocky Mountain National Park",
+        location: "Rocky Mountain National Park, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742394265/20241018_111010_mgaryb.jpg",
+        caption: "Mountains in Rocky Mountain National Park",
+        location: "Rocky Mountain National Park, Colorado"
+      },
+    ],
+    shortDescription: "Rocky Mountain National Park, a stunning national park with towering peaks and diverse wildlife",
+    description: "Rocky Mountain National Park is a stunning national park in Colorado, known for its towering peaks, alpine lakes, and diverse wildlife. Visitors can explore scenic drives, hiking trails, and breathtaking vistas, as well as enjoy activities like camping, fishing, and wildlife watching.",
+    wildlife: ["Elk", "Mule Deer", "Bighorn Sheep", "Black Bear"],
+    bestTimeToVisit: "Anytime",
+    personalNotes: "Rocky Montain National Park is one of the most amazing and beautiful places I have ever been to. The views are simply magnificent and in some places you can literally touch the clouds. I was there in fall - it was cold but worth every second"
+  },
+  {
+    id: "devils-tower",
+    name: "Devils Tower National Monument",
+    state: "Wyoming",
+    established: "September 24, 1906",
+    latitude: 44.5902,
+    longitude: -104.7147,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1742394220/20241028_125901_uerq70.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742394220/20241028_114853_pel8yr.jpg",
+        caption: "Devils Tower",
+        location: "Devils Tower National Monument, Wyoming"
+      },
+    ],
+    shortDescription: "Devils Tower National Monument, a unique geological formation and sacred site",
+    description: "Devils Tower National Monument is a unique geological formation in Wyoming, known for its towering columnar basalt cliffs. It is a sacred site for several Native American tribes and offers opportunities for hiking, rock climbing, and wildlife viewing. The surrounding area features beautiful landscapes and diverse ecosystems.",
+    wildlife: ["Mule Deer", "Black Bear", "Mountain Lion", "Bighorn Sheep"],
+    bestTimeToVisit: "Anytime",
+    personalNotes: "This geological phenomena is a must-see! The tower is so impressive and the surrounding area is beautiful. The legend tells a group of Native American children were chased by a bear and climbed the tower to escape. The bear clawed at the rock, leaving the marks you can see today."
+  }
 ]
