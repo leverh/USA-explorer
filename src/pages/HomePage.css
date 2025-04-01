@@ -1,92 +1,182 @@
 .home-page {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin: 4rem 0 5rem;
+}
+
+.hero h1 {
+  font-size: 4.8rem;
+  color: var(--color-forest);
+  margin-bottom: 1.6rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  color: var(--color-earth);
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+/* Controls Section */
+.controls-container {
+  margin-bottom: 2.5rem;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filters label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-earth);
+}
+
+.filters select {
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--color-stone);
+  font-size: 1.6rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.filters select:focus {
+  outline: none;
+  border-color: var(--color-forest);
+  box-shadow: 0 0 0 2px rgba(63, 104, 68, 0.2);
+}
+
+/* Map Section */
+.map-section {
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Parks Grid Section */
+.parks-container {
+  margin-top: 4rem;
+}
+
+.parks-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+.park-card {
+  flex: 0 1 calc(33.333% - 1.6rem);
+  max-width: calc(33.333% - 1.6rem);
+  min-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.park-card:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15);
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.park-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.park-card:hover img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.8rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.park-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-forest);
+  line-height: 1.3;
+}
+
+.park-card p {
+  font-size: 1.5rem;
+  color: var(--color-earth);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.card-footer {
+  padding: 0 1.8rem 1.8rem;
+}
+
+.explore-button {
+  display: block;
+  background-color: var(--color-forest);
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.explore-button:hover {
+  background-color: #2c5e34; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .park-card {
+    flex: 0 1 calc(50% - 1.2rem);
+    max-width: calc(50% - 1.2rem);
   }
-  
-  .hero {
-    text-align: center;
-    margin: 4rem 0 6rem;
+}
+
+@media (max-width: 600px) {
+  .park-card {
+    flex: 0 1 100%;
+    max-width: 100%;
   }
   
   .hero h1 {
-    font-size: 4.8rem;
-    color: var(--color-forest);
-    margin-bottom: 1.6rem;
+    font-size: 3.6rem;
   }
   
   .hero p {
-    font-size: 1.8rem;
-    color: var(--color-earth);
-    max-width: 60rem;
-    margin: 0 auto;
+    font-size: 1.6rem;
   }
   
   .filters {
-    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .filters label {
-    font-size: 1.6rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .filters select {
-    padding: 0.8rem 1.2rem;
-    border-radius: 0.4rem;
-    border: 0.1rem solid var(--color-stone);
-    font-size: 1.6rem;
-  }
-  
-  .map-section {
-    margin-bottom: 4rem;
-  }
-  
-  .parks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
-    gap: 2.4rem;
-    margin-top: 4rem;
-  }
-  
-  .park-card {
-    border-radius: 0.8rem;
-    overflow: hidden;
-    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .park-card:hover {
-    transform: translateY(-0.4rem);
-  }
-  
-  .park-card img {
-    width: 100%;
-    height: 16rem;
-    object-fit: cover;
-  }
-  
-  .park-card h2 {
-    font-size: 2rem;
-    padding: 1.6rem 1.6rem 0.8rem;
-    color: var(--color-forest);
-  }
-  
-  .park-card p {
-    padding: 0 1.6rem 1.6rem;
-    font-size: 1.4rem;
-    color: var(--color-earth);
-  }
-  
-  .park-card a {
-    display: block;
-    background-color: var(--color-forest);
-    color: white;
-    text-align: center;
-    padding: 1.2rem;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
+}

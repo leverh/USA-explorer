@@ -15,7 +15,10 @@ function App() {
         </Routes>
       </main>
       <footer>
-        <p>© {new Date().getFullYear()} - National Parks Explorer</p>
+        <p>© {new Date().getFullYear()} - USA Explorer</p>
+        <p className="credit">
+          Made by <a href="https://pixelsummit.dev/">PixelSummit</a>
+       </p>
       </footer>
     </div>
   )

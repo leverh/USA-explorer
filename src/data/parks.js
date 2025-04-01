@@ -19,8 +19,23 @@ export const parks = [
         location: "Mammoth Cave"
       },
       {
-      url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742309977/20231123_115410_zsfij6.jpg",
-      caption: "The forest above Mammoth Cave",
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743265036/20231122_123801_z9nxgv.jpg",
+        caption: "Inside Mammoth Cave",
+        location: "Mammoth Cave"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/v1743265031/20231122_114736_rps0s9.jpg",
+        caption: "A section of the cave with a narrow passage",
+        location: "Mammoth Cave"
+      },
+      {
+      url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743265028/20231122_113644_icng7n.jpg",
+      caption: "Going even deeper into the cave system",
+      location: "Mammoth Cave National Park"
+    },
+    {
+      url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743265040/20231123_115410_i3eo85.jpg",
+      caption: "Above the caves",
       location: "Mammoth Cave National Park"
     },
     ],
@@ -31,7 +46,7 @@ export const parks = [
     personalNotes: "The cave tour was incredible—some passages felt endless! The forest trails and river added a nice contrast to the underground world. Once you get to the park's headquarters, you can book a cave tour. Despite my dislike for crowds, the cave tour was just short enough to not be annoying. The park is also a great place to see bats, especially in the evening."
   },
   {
-    id: "Ashtabula-County",
+    id: "ashtabula-county",
     name: "Ashtabula County, Ohio",
     state: "Ohio",
     established: "1808",
@@ -100,7 +115,7 @@ export const parks = [
         url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742310202/20240428_092048_p7jdna.jpg",
         caption: "Lewes Sea Front",
         location: "Lewes, Delaware"
-      }
+      },
     ],
     shortDescription: "Lewes, Delaware, a historic town with beaches, parks, and museums",
     description: "Lewes is a historic town in Delaware, known for its beaches, parks, and museums. Visitors can explore the town's charming streets, relax on the sandy beaches, and visit local attractions like the Zwaanendael Museum and the Lewes Historical Society.",
@@ -173,6 +188,36 @@ export const parks = [
         caption: "Mountains in Rocky Mountain National Park",
         location: "Rocky Mountain National Park, Colorado"
       },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/v1743265492/20241018_122904_m5aztq.jpg",
+        caption: "Touching the clouds in Rocky Mountain National Park",
+        location: "Rocky Mountain National Park, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742394275/20241019_132934_kpygbl.jpg",
+        caption: "Lake in Rocky Mountain National Park",
+        location: "Rocky Mountain National Park, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/v1743265491/20241018_122351_kfgs1a.jpg",
+        caption: "Mountain top view in Rocky Mountain National Park",
+        location: "Rocky Mountain National Park, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/v1743265485/20241017_163249_rndibu.jpg",
+        caption: "Rocky Mountain National Park landscape",
+        location: "Rocky Mountain National Park, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/v1743265480/20241017_154130_hkhtc9.jpg",
+        caption: "View of a mountain in Rocky Mountain National Park",
+        location: "Rocky Mountain National Park, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/v1743265481/20241017_154313_usycbl.jpg",
+        caption: "Alpine lake in Rocky Mountain National Park",
+        location: "Rocky Mountain National Park, Colorado"
+      },
     ],
     shortDescription: "Rocky Mountain National Park, a stunning national park with towering peaks and diverse wildlife",
     description: "Rocky Mountain National Park is a stunning national park in Colorado, known for its towering peaks, alpine lakes, and diverse wildlife. Visitors can explore scenic drives, hiking trails, and breathtaking vistas, as well as enjoy activities like camping, fishing, and wildlife watching.",
@@ -181,24 +226,138 @@ export const parks = [
     personalNotes: "Rocky Montain National Park is one of the most amazing and beautiful places I have ever been to. The views are simply magnificent and in some places you can literally touch the clouds. I was there in fall - it was cold but worth every second"
   },
   {
+    id: "canyonlands",
+    name: "Canyonlands National Park",
+    state: "Utah",
+    established: "September 12, 1964",
+    latitude: 38.16691,
+    longitude: -109.75966,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743275429/20241020_155127_roozh1.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743275430/20241020_162745_cw9v8m.jpg",
+        caption: "View of the canyons",
+        location: "Canyonlands National Park, Utah"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743275417/20241020_131639_c0jegq.jpg",
+        caption: "A hill in Canyonlands National Park",
+        location: "Canyonlands National Park, Utah"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743275416/20241020_131553_j0vraj.jpg",
+        caption: "The vastness of Canyonlands",
+        location: "Canyonlands National Park, Utah"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743275432/20241020_170545_pq7dpl.jpg",
+        caption: "Canyonlands in the background from Moab",
+        location: "Moab, Utah"
+      },
+    ],
+    shortDescription: "Canyonlands National Park, a vast wilderness of canyons, mesas, and buttes",
+    description: "Canyonlands National Park is a vast wilderness in Utah, known for its dramatic canyons, mesas, and buttes carved by the Colorado River and its tributaries. The park is divided into four districts: Island in the Sky, The Needles, The Maze, and the rivers themselves. Each district offers unique landscapes. Visitors can explore scenic drives, hiking trails, and backcountry routes, as well as cycling and stargazing.",
+    wildlife: ["Mule Deer", "Bighorn Sheep", "Mountain Lion", "Coyote", "Golden Eagle", "Red-tailed Hawk"],
+    bestTimeToVisit: "Fall, spring, and winter",
+    personalNotes: "Discovered this park completely by accident as the entry to Arches National Park was timed. It turned out to far more impressive than Arches NP. I would highly recommend visiting Canyonlands if you are in the area. And if you have to choose between Arches and Canyonlands, choose Canyonlands."
+  },
+  {
+    id: "arches",
+    name: "Arches National Park",
+    state: "Utah",
+    established: "April 12, 1929",
+    latitude: 38.728056,
+    longitude: -109.54,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743275424/20241020_135608_l4d6uo.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743275427/20241020_142446_oso1ht.jpg",
+        caption: "One of the arches in the park",
+        location: "Arches National Park, Utah"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743275429/20241020_155127_roozh1.jpg",
+        caption: "Pillars in Arches National Park",
+        location: "Arches National Park, Utah"
+      },
+    ],
+    shortDescription: "Arches National Park, a stunning landscape of natural arches and rock formations",
+    description: "Arches National Park is a stunning landscape in Utah, known for its natural arches and rock formations. The park features over 2,000 natural stone arches, including the famous Delicate Arch. Visitors can explore scenic drives, hiking trails, and viewpoints to see these unique geological formations up close. The park is also home to a variety of desert wildlife and offers opportunities for stargazing.",
+    wildlife: ["Mule Deer", "Coyote", "Red-tailed Hawk", "Golden Eagle", "Desert Cottontail Rabbit", "Rock Squirrel"],
+    bestTimeToVisit: "Fall, Spring, and Winter",
+    personalNotes: "You need to book a time slot to visit the park and then contend with thousands of people everywhere. Is it worth it? not really considering Canyonlands National Park is just around the corner and far less popular but offers a much more impressive view. The arches are nice but after a while they all start to look the same. I would say if you have time visit both but if you have to choose one, choose Canyonlands. Also, the park is very small and can be done in 2-3 hours."
+  },
+  {
     id: "devils-tower",
     name: "Devils Tower National Monument",
     state: "Wyoming",
     established: "September 24, 1906",
     latitude: 44.5902,
     longitude: -104.7147,
-    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1742394220/20241028_125901_uerq70.jpg",
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743265884/20241028_122925_v7rpf5.jpg",
     images: [
       {
         url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742394220/20241028_114853_pel8yr.jpg",
         caption: "Devils Tower",
         location: "Devils Tower National Monument, Wyoming"
       },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742394221/20241028_125901_uerq70.jpg",
+        caption: "The preceeding view of Devils Tower as you approach it",
+        location: "Devils Tower National Monument, Wyoming"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743265886/20241028_124909_xouu8t.jpg",
+        caption: "The Devils Tower as seen from afar",
+        location: "Devils Tower National Monument, Wyoming"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743265881/20241028_120210_umt262.jpg",
+        caption: "Hiking trail around Devils Tower",
+        location: "Devils Tower National Monument, Wyoming"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743265887/20241028_125309_roqmdo.jpg",
+        caption: "Prairie dog town near Devils Tower",
+        location: "Devils Tower National Monument, Wyoming"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743265878/20241028_113408_hcqfls.jpg",
+        caption: "View from the distance showing the surrounding landscape and Devils Tower",
+        location: "Devils Tower National Monument, Wyoming"
+      },
     ],
     shortDescription: "Devils Tower National Monument, a unique geological formation and sacred site",
     description: "Devils Tower National Monument is a unique geological formation in Wyoming, known for its towering columnar basalt cliffs. It is a sacred site for several Native American tribes and offers opportunities for hiking, rock climbing, and wildlife viewing. The surrounding area features beautiful landscapes and diverse ecosystems.",
-    wildlife: ["Mule Deer", "Black Bear", "Mountain Lion", "Bighorn Sheep"],
+    wildlife: ["Mule Deer", "Black Bear", "Mountain Lion", "Bighorn Sheep", "Prairie Dog"],
     bestTimeToVisit: "Anytime",
     personalNotes: "This geological phenomena is a must-see! The tower is so impressive and the surrounding area is beautiful. The legend tells a group of Native American children were chased by a bear and climbed the tower to escape. The bear clawed at the rock, leaving the marks you can see today."
+  },
+
+  {
+    id: "great-dunes",                  
+    name: "Great Sand Dunes National Park and Preserve",                
+    state: "Colorado",               
+    established: "March 17, 1932",         
+    latitude: 37.7329,            
+    longitude: -105.5121,           
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743522242/20241022_140217_-_Copy_rccjvj.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743522242/20241022_140220_-_Copy_ty7hc4.jpg",
+        caption: "Dune at the Great Sand Dunes National Park",
+        location: "Great Sand Dunes National Park and Preserve"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743522241/20241022_135950_ug7ilz.jpg",
+        caption: "Sangre de Cristo Mountains in the background of the dunes",
+        location: "Great Sand Dunes National Park and Preserve"
+      },
+    ],
+    shortDescription: "Great Sand Dunes National Park and Preserve, home to the tallest sand dunes in North America",
+    description: "Great Sand Dunes National Park and Preserve, located in southern Colorado, encompasses over 30 square miles of massive dunes, some rising as high as 750 feet. These dunes are set against the backdrop of the rugged Sangre de Cristo Mountains, creating a stunning and unique landscape. The park also features diverse ecosystems, including grasslands, wetlands, forests, alpine lakes, and tundra, offering visitors a wide range of natural experiences.",
+    wildlife: ["Elk", "Mule Deer", "Pronghorn"],
+    bestTimeToVisit: "Spring, Fall, and Summer",
+    personalNotes: "I thought it was overrated and a bit meh. I personally wouldn't bother. It's just sand, sand, and more sand. If you're into that, you'll enjoy it."        // Personal observations and experiences
   }
 ]
