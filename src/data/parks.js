@@ -194,11 +194,6 @@ export const parks = [
         location: "Rocky Mountain National Park, Colorado"
       },
       {
-        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742394275/20241019_132934_kpygbl.jpg",
-        caption: "Lake in Rocky Mountain National Park",
-        location: "Rocky Mountain National Park, Colorado"
-      },
-      {
         url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/v1743265491/20241018_122351_kfgs1a.jpg",
         caption: "Mountain top view in Rocky Mountain National Park",
         location: "Rocky Mountain National Park, Colorado"
@@ -428,5 +423,110 @@ export const parks = [
     wildlife: ["Peregrine Falcons", "Wild Turkeys", "Mexican Spotted Owls", "Mule Deer"],
     bestTimeToVisit: "Anytime when the park is open",
     personalNotes: "This is a very interesting national park. You have to book a tour in advance if you want to go and see the dwellings up close. I felt that the tour (with a NP guide) was a little overly 'spiritual' for an atheist. I would have preferred a more factual account of the history and culture of the Ancestral Puebloans. However, the dwellings themselves are very impressive and worth seeing. The views from the top of the cliffs are also breathtaking. Overall, a must-see if you're in Colorado and interested in history."
+  },
+
+  {
+    id: "madison",
+    name: "Madison, Wisconsin",
+    state: "Wisconsin",
+    established: "1836",
+    latitude: 43.074722,
+    longitude: -89.384167,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743537805/20231114_205059_ez1ago.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743537805/20231114_191054_-_Copy_isycjv.jpg",
+        caption: "Pride flag painted on the street in Madison, Wisconsin",
+        location: "Madison, Wisconsin"
+      },
+      {
+        url:"https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743537805/20231114_194713_fhx40i.jpg",
+        caption: "A view to the capitol building from the street in Madison, Wisconsin",
+        location: "Madison, Wisconsin"
+      },
+      {
+        url:"https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743537806/20231114_195220_-_Copy_qe5zbh.jpg",
+        caption:"Abraham Lincoln statue in Bascom Hill, University of Wisconsin-Madison campus",
+        location: "University of Wisconsin-Madison, Madison, Wisconsin"
+      }
+    ],
+    shortDescription: "Madison is the capital of Wisconsin and a city with a rich history and culture",
+    description: "Madison is the capital of Wisconsin and is known for its vibrant culture, rich history, and beautiful lakes. The city is home to the University of Wisconsin-Madison, which adds to its youthful energy. Visitors can explore the Wisconsin State Capitol, stroll through the picturesque Olbrich Botanical Gardens, and enjoy the local food scene, including cheese curds and craft beer. Madison also hosts various festivals and events throughout the year, celebrating its diverse community.",
+    wildlife: ["White-tailed Deer", "Red Fox", "Eastern Gray Squirrel", "Canada Goose"],
+    bestTimeToVisit: "Anytime",
+    personalNotes: "Madison was very surprising as I expected very little. The city has a very nice vibe, thanks to all the students, and is very LGBTQ+ friendly. The capitol building is beautiful and the surrounding area is very picturesque. Interestingly, weed is sold in Madison (but is still illegal Wisconsin)."
+  },
+
+  {
+    id: "grand-mesa",
+    name: "Grand Mesa National Forest",
+    state: "Colorado",
+    established: "December 24, 1892",
+    latitude: 39.0668,
+    longitude: -107.8834,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743538678/20241019_124152_e808rc.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1742394275/20241019_132934_kpygbl.jpg",
+        caption: "A lake and it's refleciton on the water in Grand Mesa National Forest",
+        location: "Grand Mesa National Forest, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743538676/20241019_124106_o7awyk.jpg",
+        caption: "The forested area of Grand Mesa National Forest",
+        location: "Grand Mesa National Forest, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743538712/20241019_124235_lnsdmo.jpg",
+        caption: "The view to the Rocky Mountains from Grand Mesa National Forest",
+        location: "Grand Mesa National Forest, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743538674/20241019_124101_h6vijw.jpg",
+        caption: "The forested area of Grand Mesa National Forest",
+        location: "Grand Mesa National Forest, Colorado"
+      }
+    ],
+    shortDescription: "Grand Mesa National Forest, a vast plateau with stunning landscapes, lakes, and recreational opportunities",
+    description: "Grand Mesa National Forest is a vast plateau located in western Colorado, known for its stunning landscapes, alpine lakes, and diverse recreational opportunities. The forest covers over 500 square miles and is home to more than 300 lakes, making it a popular destination for boating, hiking, and camping. Visitors can also enjoy scenic drives and wildlife viewing in this beautiful natural setting.",
+    wildlife: ["Elk", "Mule Deer", "Rocky Mountain Bighorn Sheep", "Black Bear", "Mountain Lion", "Canada Lynx"],
+    bestTimeToVisit: "All seasons",
+    personalNotes: "This one was discovered by accident without pre-planning a visit to the area and it was actually one of the most stunning places i have ever seen in my life. A few days later the entire forest was covered in snow."
+  },
+  {
+    id: "cumberland-gap",
+    name: "Cumberland Gap National Historical Park",
+    state: "Kentucky",
+    established: "October 15, 1966",
+    latitude: 36.604167,
+    longitude: -83.687222,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743539617/20231124_114422_wmjidw.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743539612/20231123_142709_teasbd.jpg",
+        caption: "The forest in the gap",
+        location: "Cumberland Gap National Historical Park, Kentucky"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743539615/20231123_155444_-_Copy_ffod3y.jpg",
+        caption: "A tunnel that carves through the mountain",
+        location: "Cumberland Gap National Historical Park, Kentucky"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743539614/20231123_153136_c8u9zx.jpg",
+        caption: "The forest in the gap",
+        location: "Cumberland Gap National Historical Park, Kentucky"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload//f_auto,q_auto/v1743539614/20231123_115958_yygntg.jpg",
+        caption: "The forest in the gap",
+        location: "Cumberland Gap National Historical Park, Kentucky"
+      },
+    ],
+    shortDescription: "Cumberland Gap National Historical Park, located at the intersection of Kentucky, Tennessee, and Virginia, preserves the historic gateway that enabled early American pioneers to migrate westward.",
+    description: "Spanning approximately 24,000 acres, Cumberland Gap National Historical Park offers rich history and natural beauty. The park features over 85 miles of trails that wind through diverse landscapes, including groves of hemlock, fields of wildflowers, and meadows adorned with rhododendron and fiddle ferns. Notable attractions include the Pinnacle Overlook, providing panoramic views of the surrounding mountains, and guided tours of the historic Hensley Settlement and Gap Cave, which delve into the area's cultural and geological significance.",
+    wildlife: ["White-tailed Deer", "Black Bear", "Gray Squirrel"],
+    bestTimeToVisit: "Spring, fall, winter",
+    personalNotes: "This is a very nice (and free) park to visit. The trails are pretty good and you wont bump into many people on your way. The only downside is having to drive through the middle of nowhere in Kentucky and seeing homophobic billboards, confederate flags, and rundown roads. "
   }
 ]
