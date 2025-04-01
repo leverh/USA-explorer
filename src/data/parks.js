@@ -527,6 +527,6 @@ export const parks = [
     description: "Spanning approximately 24,000 acres, Cumberland Gap National Historical Park offers rich history and natural beauty. The park features over 85 miles of trails that wind through diverse landscapes, including groves of hemlock, fields of wildflowers, and meadows adorned with rhododendron and fiddle ferns. Notable attractions include the Pinnacle Overlook, providing panoramic views of the surrounding mountains, and guided tours of the historic Hensley Settlement and Gap Cave, which delve into the area's cultural and geological significance.",
     wildlife: ["White-tailed Deer", "Black Bear", "Gray Squirrel"],
     bestTimeToVisit: "Spring, fall, winter",
-    personalNotes: "This is a very nice (and free) park to visit. The trails are pretty good and you wont bump into many people on your way. The only downside is having to drive through the middle of nowhere in Kentucky and seeing homophobic billboards, confederate flags, and rundown roads. "
+    personalNotes: "This is a very nice (and free) park to visit. The trails are pretty good and you wont bump into many people on your way. The only downside is having to drive through the middle of nowhere in Kentucky and seeing homophobic billboards, confederate flags, and rundown shacks. "
   }
 ]
