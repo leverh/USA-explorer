@@ -359,5 +359,74 @@ export const parks = [
     wildlife: ["Elk", "Mule Deer", "Pronghorn"],
     bestTimeToVisit: "Spring, Fall, and Summer",
     personalNotes: "I thought it was overrated and a bit meh. I personally wouldn't bother. It's just sand, sand, and more sand. If you're into that, you'll enjoy it."        // Personal observations and experiences
+  },
+
+  {
+    id: "rushmore",
+    name: "Mount Rushmore National Memorial",
+    state: "South Dakota",
+    established: "March 3, 1925",
+    latitude: 43.878889,
+    longitude: -103.459722,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743525101/20241028_160952_pahri4.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/v1743525101/20241028_161714_sfp64j.jpg",
+        caption: "Mount Rushmore",
+        location: "Mount Rushmore National Memorial, South Dakota"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743525100/20241028_161512_okvo7r.jpg",
+        caption: "Close-up of Mount Rushmore",
+        location: "Mount Rushmore National Memorial, South Dakota"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743525100/20241028_160522_eghjnx.jpg",
+        caption: "View of Mount Rushmore boulvard leading to the memorial",
+        location: "Mount Rushmore National Memorial, South Dakota"
+      }
+    ],
+    shortDescription: "Mount Rushmore National Memorial, a monumental granite sculpture of four U.S. presidents",
+    description: "Mount Rushmore National Memorial is a monumental granite sculpture located in the Black Hills region of South Dakota. The sculpture features the faces of four U.S. presidents: George Washington, Thomas Jefferson, Theodore Roosevelt, and Abraham Lincoln. Carved into the granite face of the mountain, it is one of the most iconic symbols of the United States. The memorial attracts millions of visitors each year who come to admire the artistry and learn about the history behind it.",
+    wildlife: ["Yellow-bellied Marmot", "Mountain Lion", "American Red Squirrel", "Black Bear"],
+    bestTimeToVisit: "Anytime",
+    personalNotes: "It's a very impressive memorial and you can see how much work was put into building it. If you're in the area, this is a definite must."
+  },
+
+  {
+    id: "mesa-verde",
+    name: "Mesa Verde National Park",
+    state: "Colorado",
+    established: "June 29, 1906",
+    latitude: 37.1838,
+    longitude: -108.4887,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743525659/20241021_142303_a2tbrb.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743525659/20241021_142256_equ27i.jpg",
+        caption: "View of Cliff Palace, one of the most famous cliff dwellings in Mesa Verde",
+        location: "Mesa Verde National Park, Colorado"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743525662/20241021_150823_rvqa8c.jpg",
+        caption: "The dwellings in Mesa Verde National Park are built into the cliffs",
+        location: "Mesa Verde National Park, Colorado" 
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743525666/20241021_155928_yxygyh.jpg",
+        caption: "View from the bottom of a cliff dwelling in Mesa Verde National Park",
+        location: "Mesa Verde National Park, Colorado" 
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743525662/20241021_155903_cmjzie.jpg",
+        caption: "On the tour of the cliff dwellings, you can see the intricate stonework and architecture of the Ancestral Puebloans",
+        location: "Mesa Verde National Park, Colorado" 
+      }
+    ],
+    shortDescription: "Mesa Verde National Park, a UNESCO World Heritage Site known for its well-preserved Ancestral Puebloan cliff dwellings",
+    description: "Mesa Verde National Park is a UNESCO World Heritage Site located in Colorado, known for its well-preserved Ancestral Puebloan cliff dwellings. The park protects nearly 5,000 archaeological sites, including 600 cliff dwellings, which were built by the Ancestral Puebloans over 700 years ago. Visitors can explore these ancient structures, learn about the culture and history of the people who lived here, and enjoy scenic drives and hiking trails through the park's stunning landscapes.",
+    wildlife: ["Peregrine Falcons", "Wild Turkeys", "Mexican Spotted Owls", "Mule Deer"],
+    bestTimeToVisit: "Anytime when the park is open",
+    personalNotes: "This is a very interesting national park. You have to book a tour in advance if you want to go and see the dwellings up close. I felt that the tour (with a NP guide) was a little overly 'spiritual' for an atheist. I would have preferred a more factual account of the history and culture of the Ancestral Puebloans. However, the dwellings themselves are very impressive and worth seeing. The views from the top of the cliffs are also breathtaking. Overall, a must-see if you're in Colorado and interested in history."
   }
 ]
