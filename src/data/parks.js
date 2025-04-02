@@ -518,7 +518,7 @@ export const parks = [
         location: "Cumberland Gap National Historical Park, Kentucky"
       },
       {
-        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload//f_auto,q_auto/v1743539614/20231123_115958_yygntg.jpg",
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743539614/20231123_115958_yygntg.jpg",
         caption: "The forest in the gap",
         location: "Cumberland Gap National Historical Park, Kentucky"
       },
@@ -528,5 +528,74 @@ export const parks = [
     wildlife: ["White-tailed Deer", "Black Bear", "Gray Squirrel"],
     bestTimeToVisit: "Spring, fall, winter",
     personalNotes: "This is a very nice (and free) park to visit. The trails are pretty good and you wont bump into many people on your way. The only downside is having to drive through the middle of nowhere in Kentucky and seeing homophobic billboards, confederate flags, and rundown shacks. "
+  },
+
+  {
+    id: "badlands",
+    name: "Badlands National Park",
+    state: "South Dakota",
+    established: "January 25, 1939",
+    latitude: 43.75,
+    longitude: -102.5,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743612067/20241029_120501_wyfbo7.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743612146/20241029_121306_v4j9vn.jpg",
+        caption: "View of Badlands National Park",
+        location: "Badlands National Park, South Dakota"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743612060/20241029_113930_p0mw6a.jpg",
+        caption: "View of Badlands National Park",
+        location: "Badlands National Park, South Dakota"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743612148/20241029_122637_vj9rvv.jpg",
+        caption: "Prairie Dog Town signage warning of plague!",
+        location: "Roberts Prairie Dog Town, Badlands National Park, South Dakota"
+      },
+    ],
+    shortDescription: "Badlands National Park is a dramatic stretch of rugged terrain and prairie, known for its colorful rock formations and ancient fossil beds.",
+    description: "Badlands National Park is located in southwestern South Dakota and offers a stunning, almost otherworldly landscape carved by wind and water over millions of years. The park is a mix of sharply eroded buttes, steep canyons, and towering spires, surrounded by rolling grasslands. It's one of the best places to see the raw forces of geology at work. In addition to its natural beauty, the area is rich in paleontological history, with fossils of ancient mammals like rhinos and saber-toothed cats having been discovered here.",
+    wildlife: ["Bison", "Bighorn Sheep", "Prairie Dogs"],
+    bestTimeToVisit: "All seasons",
+    personalNotes: "This park really is beautiful. But i think i specifically loved it because it was empty - I hardly saw anyone around. A nice quirk were the signs in Prairie Dog Town warning of the plague."
+  }, 
+
+  {
+    id: "black-hills",
+    name: "Black Hills National Forest",
+    state: "South Dakota",
+    established: "February 22, 1897",
+    latitude: 43.936389,
+    longitude: -103.727778,
+    thumbnailUrl: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto:good/v1743612951/20241028_152502_zdjc3m.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743612957/20241028_152706_ll2dub.jpg",
+        caption: "View of a lake in Black Hills National Forest",
+        location: "Black Hills National Forest, South Dakota"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743612953/20241028_152519_r7t2pr.jpg",
+        caption: "View of a lake in Black Hills National Forest",
+        location: "Black Hills National Forest, South Dakota"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743612958/20241029_162116_kh2ay9.jpg",
+        caption: "Driving through a blizzard in Black Hills National Forest",
+        location: "Black Hills National Forest, South Dakota"
+      },
+      {
+        url: "https://res.cloudinary.com/ddsbfxlbq/image/upload/f_auto,q_auto/v1743612960/20241031_224230_vycklr.jpg",
+        caption: "Book of Mormon in a hotel drawer in Black Hills National Forest. A true American quirk.",
+        location: "Black Hills National Forest, South Dakota"
+      }
+    ],
+    shortDescription: "Black Hills National Forest is a sprawling, forested region in western South Dakota and northeastern Wyoming, known for its rugged peaks, hidden lakes, and scenic drives.",
+    description: "Covering over 1.2 million acres, Black Hills National Forest is a diverse and beautiful region that contrasts sharply with the surrounding plains. The forest features pine-covered hills, granite spires, deep canyons, and serene mountain lakes. It’s home to a wide range of outdoor activities—from hiking and fishing to rock climbing and off-roading. Dotted throughout the forest are historic mining towns and cultural landmarks, making it as much about human history as it is about natural beauty.",
+    wildlife: ["Elk", "Mountain Lion", "Wild Turkey"],
+    bestTimeToVisit: "Late spring through early fall, when the weather is warm and most trails and roads are open.",
+    personalNotes: "I loved how the forest seemed to go on forever, with winding roads that revealed new views around every bend. The mix pine groves and jagged rock formations are really beautiful. This is again a location I discovered by accident as I was driving east from Wyoming. Next time I'm there, I'll stop for more than just a day."
   }
 ]
