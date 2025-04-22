@@ -1,0 +1,149 @@
+.park-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-med);
+    background-color: white;
+    height: 100%;
+  }
+  
+  body[data-theme="dark"] .park-card {
+    background-color: var(--color-dark-card);
+  }
+  
+  .park-card:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .card-image-container {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+  }
+  
+  .park-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+  
+  .park-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Image overlay effect */
+  .card-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+  }
+  
+  .park-card:hover .card-image-container::after {
+    opacity: 1;
+  }
+  
+  /* Image loading placeholder */
+  .card-image-container.loading {
+    background-color: var(--color-stone-light);
+    animation: imagePulse 1.5s infinite alternate;
+  }
+  
+  @keyframes imagePulse {
+    0% {
+      background-color: var(--color-stone-light);
+    }
+    100% {
+      background-color: var(--color-stone);
+    }
+  }
+  
+  .card-content {
+    padding: var(--spacing-md);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .park-card h3 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-forest);
+    line-height: 1.3;
+  }
+  
+  body[data-theme="dark"] .park-card h3 {
+    color: var(--color-forest-light);
+  }
+  
+  .park-card p {
+    font-size: 1.5rem;
+    color: var(--color-earth);
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+  
+  body[data-theme="dark"] .park-card p {
+    color: var(--color-dark-text-secondary);
+  }
+  
+  .card-footer {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+  }
+  
+  .explore-button {
+    display: block;
+    background-color: var(--color-forest);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .explore-button::after {
+    content: "→";
+    position: absolute;
+    right: var(--spacing-md);
+    opacity: 0;
+    transform: translateX(-1rem);
+    transition: all var(--transition-fast);
+  }
+  
+  .explore-button:hover {
+    background-color: var(--color-forest-dark);
+    padding-right: 3.6rem;
+  }
+  
+  .explore-button:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .park-state {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-forest);
+    z-index: 1;
+  }

@@ -1,0 +1,65 @@
+.photo-item {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-med);
+    background-color: white;
+  }
+  
+  .photo-item:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .photo-image-container {
+    position: relative;
+    width: 100%;
+    height: 24rem;
+    overflow: hidden;
+  }
+  
+  .photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+  
+  .photo-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Image loading placeholder */
+  .photo-image-container.loading {
+    background-color: var(--color-stone-light);
+    animation: imagePulse 1.5s infinite alternate;
+  }
+  
+  @keyframes imagePulse {
+    0% {
+      background-color: var(--color-stone-light);
+    }
+    100% {
+      background-color: var(--color-stone);
+    }
+  }
+  
+  .caption {
+    font-weight: bold;
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-xs);
+    font-size: 1.6rem;
+    color: var(--color-forest);
+  }
+  
+  .location {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    color: var(--color-earth);
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .location::before {
+    content: "📍";
+    margin-right: var(--spacing-xs);
+  }

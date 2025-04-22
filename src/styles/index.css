@@ -1,33 +1,289 @@
+/* Global CSS */
 :root {
-    /* Color palette */
-    --color-forest: #2c5f2d;
-    --color-moss: #97bc62;
-    --color-earth: #5e503f;
-    --color-stone: #a9a9a9;
-    --color-water: #0077b6;
-    
-    /* Typography */
-    --font-main: system-ui, -apple-system, sans-serif;
-    --font-heading: Georgia, serif;
-  }
+  /* Color palette - expanded with variations */
+  --color-forest: #2c5f2d;
+  --color-forest-light: #3d7f3e;
+  --color-forest-dark: #1e4020;
+  --color-moss: #97bc62;
+  --color-moss-light: #a9ce74;
+  --color-moss-dark: #789c4b;
+  --color-earth: #5e503f;
+  --color-stone: #a9a9a9;
+  --color-stone-light: #d0d0d0;
+  --color-stone-dark: #777777;
+  --color-water: #0077b6;
+  --color-water-light: #3a97d4;
+  --color-water-dark: #005685;
+  --color-cream: #f5f5f0;
   
-  *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  /* Dark theme colors - will be applied conditionally */
+  --color-dark-bg: #1a1a1a;
+  --color-dark-card: #2a2a2a;
+  --color-dark-text: #e0e0e0;
+  --color-dark-text-secondary: #a0a0a0;
+  --color-dark-border: #3a3a3a;
+  
+  /* Typography */
+  --font-main: system-ui, -apple-system, sans-serif;
+  --font-heading: Georgia, serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.4rem;
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1.6rem;
+  --spacing-lg: 2.4rem;
+  --spacing-xl: 3.2rem;
+  --spacing-xxl: 4.8rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15);
+  
+  /* Border radius */
+  --radius-sm: 0.4rem;
+  --radius-md: 0.8rem;
+  --radius-lg: 1.2rem;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-med: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
 
+/* Dark theme variables */
+body[data-theme="dark"] {
+  --color-forest: #3d7f3e;
+  --color-forest-light: #4e904f;
+  --color-forest-dark: #2c5f2d;
+  --color-moss: #8aad5a;
+  --color-moss-light: #97bc62;
+  --color-moss-dark: #789c4b;
+  --color-earth: #7d6b56;
+  --color-stone: #8c8c8c;
+  --color-stone-light: #a9a9a9;
+  --color-stone-dark: #777777;
+  --color-cream: #1a1a1a;
+  
+  --shadow-sm: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.3);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: #333;
+  background-color: var(--color-cream);
+  transition: background-color var(--transition-med), color var(--transition-med);
+}
+
+/* Dark theme body styles */
+body[data-theme="dark"] {
+  color: var(--color-dark-text);
+  background-color: var(--color-dark-bg);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+body[data-theme="dark"] h1,
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3,
+body[data-theme="dark"] h4 {
+  color: var(--color-dark-text);
+}
+
+a {
+  color: var(--color-forest);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover, a:focus {
+  color: var(--color-forest-light);
+  text-decoration: underline;
+}
+
+/* Container class for consistent spacing */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-forest);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn:hover, .btn:focus {
+  background-color: var(--color-forest-light);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--color-moss);
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--color-moss-dark);
+}
+
+/* Navigation Bar */
+.main-nav {
+  background-color: white;
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-md) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-forest);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-md);
+}
+
+.nav-links li a {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.nav-links li a:hover, .nav-links li a:focus {
+  background-color: var(--color-stone-light);
+  text-decoration: none;
+}
+
+/* Card styles */
+.card {
+  background-color: white;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-med), box-shadow var(--transition-med);
+}
+
+.card:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Accessibility focus styles */
+:focus {
+  outline: 2px solid var(--color-forest);
+  outline-offset: 2px;
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  background: var(--color-forest);
+  color: white;
+  padding: var(--spacing-sm);
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Loading page styles */
+.loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-med);
+}
+
+/* Badge for states, tags, etc. */
+.badge {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--color-moss-light);
+  color: var(--color-forest-dark);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Responsive base */
+@media (max-width: 1200px) {
   html {
-    font-size: 10px;
-    scroll-behavior: smooth;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
   }
   
-  body {
-    font-family: var(--font-main);
-    line-height: 1.6;
-    color: #333;
+  .container {
+    padding: 0 var(--spacing-sm);
   }
-  
-  h1, h2, h3, h4 {
-    font-family: var(--font-heading);
-  }
+}

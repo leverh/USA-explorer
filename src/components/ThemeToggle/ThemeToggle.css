@@ -1,0 +1,30 @@
+.theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xs);
+    color: var(--color-earth);
+    border-radius: 50%;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+  }
+  
+  .theme-toggle:hover {
+    background-color: var(--color-stone-light);
+    color: var(--color-forest);
+  }
+  
+  .theme-toggle:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(44, 95, 45, 0.2);
+  }
+  
+  .theme-toggle svg {
+    transition: transform var(--transition-fast);
+  }
+  
+  .theme-toggle:hover svg {
+    transform: rotate(12deg);
+  }

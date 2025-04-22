@@ -1,0 +1,307 @@
+.about-page {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+  }
+  
+  .about-page.fade-in {
+    opacity: 1;
+  }
+  
+  /* About Header */
+  .about-header {
+    text-align: center;
+    margin: var(--spacing-xxl) 0 var(--spacing-xl);
+    position: relative;
+  }
+  
+  .about-header::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.3rem;
+    background-color: var(--color-moss);
+    border-radius: 0.2rem;
+  }
+  
+  .about-header h1 {
+    font-size: 4.8rem;
+    color: var(--color-forest);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .about-subtitle {
+    font-size: 2rem;
+    color: var(--color-earth);
+    font-style: italic;
+  }
+  
+  /* About Sections */
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--spacing-xl);
+    margin: var(--spacing-xxl) 0;
+    align-items: center;
+  }
+  
+  .about-section.reverse {
+    grid-template-columns: 1.5fr 1fr;
+    direction: rtl;
+  }
+  
+  .about-section.reverse .about-content {
+    direction: ltr;
+  }
+  
+  .about-section.full-width {
+    grid-template-columns: 1fr;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .about-image-container {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    height: 100%;
+  }
+  
+  .about-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+  
+  .about-image-container:hover img {
+    transform: scale(1.03);
+  }
+  
+  .profile-image {
+    height: 40rem;
+  }
+  
+  .journey-image {
+    height: 40rem;
+  }
+  
+  .equipment-image {
+    height: 40rem;
+  }
+  
+  .about-content h2 {
+    font-size: 3.2rem;
+    color: var(--color-forest);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+  }
+  
+  .about-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -0.8rem;
+    left: 0;
+    width: 4rem;
+    height: 0.2rem;
+    background-color: var(--color-moss);
+    border-radius: 0.2rem;
+  }
+  
+  .about-content.centered h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .about-content p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: var(--color-earth);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  /* Facts Section */
+  .about-facts {
+    background-color: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin: var(--spacing-xxl) 0;
+  }
+  
+  body[data-theme="dark"] .about-facts {
+    background-color: var(--color-dark-card);
+  }
+  
+  .about-facts h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    color: var(--color-forest);
+    margin-bottom: var(--spacing-xl);
+    position: relative;
+  }
+  
+  .about-facts h2::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4rem;
+    height: 0.2rem;
+    background-color: var(--color-moss);
+    border-radius: 0.2rem;
+  }
+  
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+  }
+  
+  .fact-card {
+    text-align: center;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    background-color: var(--color-cream);
+    transition: transform var(--transition-fast);
+  }
+  
+  body[data-theme="dark"] .fact-card {
+    background-color: var(--color-dark-bg);
+  }
+  
+  .fact-card:hover {
+    transform: translateY(-0.5rem);
+  }
+  
+  .fact-number {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--color-forest);
+    line-height: 1.1;
+  }
+  
+  .fact-label {
+    font-size: 1.6rem;
+    color: var(--color-earth);
+    margin-top: var(--spacing-xs);
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    text-align: center;
+    max-width: 70rem;
+    margin: var(--spacing-xxl) auto;
+    padding: var(--spacing-xl);
+    background-color: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+  
+  body[data-theme="dark"] .contact-section {
+    background-color: var(--color-dark-card);
+  }
+  
+  .contact-section h2 {
+    font-size: 3.2rem;
+    color: var(--color-forest);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .contact-section p {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    color: var(--color-earth);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .contact-button {
+    display: inline-block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: var(--color-forest);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+  }
+  
+  .contact-button:hover {
+    background-color: var(--color-forest-dark);
+    transform: translateY(-0.3rem);
+    box-shadow: var(--shadow-md);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .about-section,
+    .about-section.reverse {
+      grid-template-columns: 1fr;
+      direction: ltr;
+      gap: var(--spacing-lg);
+    }
+    
+    .about-image-container {
+      max-height: 35rem;
+    }
+    
+    .facts-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-lg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-header h1 {
+      font-size: 3.6rem;
+    }
+    
+    .about-subtitle {
+      font-size: 1.8rem;
+    }
+    
+    .about-content h2 {
+      font-size: 2.8rem;
+    }
+    
+    .facts-grid {
+      grid-template-columns: 1fr;
+      max-width: 30rem;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-header h1 {
+      font-size: 3rem;
+    }
+    
+    .fact-number {
+      font-size: 3.6rem;
+    }
+  }
+  
+  /* Dark Theme Support */
+  body[data-theme="dark"] .about-header h1,
+  body[data-theme="dark"] .about-content h2,
+  body[data-theme="dark"] .about-facts h2,
+  body[data-theme="dark"] .contact-section h2,
+  body[data-theme="dark"] .fact-number {
+    color: var(--color-forest-light);
+  }
+  
+  body[data-theme="dark"] .about-subtitle,
+  body[data-theme="dark"] .about-content p,
+  body[data-theme="dark"] .contact-section p,
+  body[data-theme="dark"] .fact-label {
+    color: var(--color-dark-text-secondary);
+  }

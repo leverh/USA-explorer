@@ -1,27 +1,19 @@
-import { Routes, Route } from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import ParkPage from './pages/ParkPage'
-import Navigation from './components/Navigation/Navigation'
-import './styles/App.css'
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ParkPage from './pages/ParkPage';
+import AboutPage from './pages/AboutPage';
+import './styles/App.css';
 
 function App() {
   return (
     <div className="app">
-      <Navigation />
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/park/:parkId" element={<ParkPage />} />
-        </Routes>
-      </main>
-      <footer>
-        <p>© {new Date().getFullYear()} - USA Explorer</p>
-        <p className="credit">
-          Made by <a href="https://pixelsummit.dev/">PixelSummit</a>
-       </p>
-      </footer>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/park/:parkId" element={<ParkPage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
