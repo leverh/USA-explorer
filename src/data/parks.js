@@ -597,5 +597,78 @@ export const parks = [
     wildlife: ["Elk", "Mountain Lion", "Wild Turkey"],
     bestTimeToVisit: "Late spring through early fall, when the weather is warm and most trails and roads are open.",
     personalNotes: "I loved how the forest seemed to go on forever, with winding roads that revealed new views around every bend. The mix pine groves and jagged rock formations are really beautiful. This is again a location I discovered by accident as I was driving east from Wyoming. Next time I'm there, I'll stop for more than just a day."
+  },
+  {
+    id: "pisgah ",
+    name: "Pisgah National Forest",
+    state: "North Carolina",
+    established: "October 17, 1916",
+    latitude: 35.36,
+    longitude: -82.793,
+    thumbnailUrl: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto:good/v1745311924/IMG_20221118_132330563_grd3oa.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745311927/IMG_20221118_133959761_egwiry.jpg",
+        caption: "Walking  through the forest",
+        location: "Pisgah National Forest, North Carolina"
+      },
+      {
+        url: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745311925/IMG_20221118_133844375_uubxbx.jpg",
+        caption: "A cave in Pisgah National Forest",
+        location: "Pisgah National Forest, North Carolina"
+      },
+      {
+        url: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745311921/IMG_20221118_132613485_HDR_fuzr9c.jpg",
+        caption: "The forested area of Pisgah National Forest",
+        location: "Pisgah National Forest, North Carolina"
+      },
+      {
+        url: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745311920/IMG_20221118_133444679_HDR_v9m3is.jpg",
+        caption: "The forested area of Pisgah National Forest",
+        location: "Pisgah National Forest, North Carolina"
+      },
+      {
+        url: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745311922/IMG_20221118_132452985_BURST000_COVER_urhqud.jpg",
+        caption: "Observation point in Pisgah National Forest",
+        location: "Pisgah National Forest, North Carolina"
+      }
+
+    ],
+    shortDescription: "Pisgah National Forest is a vast, forested region in western North Carolina, known for its rugged mountains, deep canyons, and scenic drives.",
+    description: "Spanning over 500,000 acres in western North Carolina, Pisgah National Forest is a lush and mountainous landscape known for its dense hardwood forests, cascading waterfalls, and rugged peaks. The forest is crisscrossed with hundreds of miles of hiking trails, including parts of the Appalachian Trail and the Blue Ridge Parkway. Its deep valleys and high ridgelines are steeped in Appalachian history and culture, making it a popular destination for outdoor enthusiasts, hikers, and nature lovers.",
+    wildlife: ["Black Bear", "White-Tailed Deer", "Eastern Box Turtle"],
+    bestTimeToVisit: "Fall, spring and summer are the best times to visit Pisgah National Forest, as the weather is mild and trails are open.",
+    personalNotes: "One of the most beautiful forests I've ever been to. I've been here a few times and I'm always impressed by the beauty of the place. The trails are well-maintained and the views are stunning. I would highly recommend visiting Pisgah National Forest if you're in the Asheville area."
+  },
+  {
+    id: "new-river-gorge",
+    name: "New River Gorge National Park and Preserve",
+    state: "West Virginia",
+    established: "December 27, 2020",
+    latitude: 37.960833,
+    longitude: -81.081667,
+    thumbnailUrl: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto:good/v1745313003/IMG_20220324_115055051_HDR_gbhqy7.jpg",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745313006/IMG_20221119_130603814_wodbl7.jpg",
+        caption: "View of the river",
+        location: "New River Gorge National Park and Preserve, West Virginia"
+      },
+      {
+        url: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745313000/IMG_20221119_130356215_HDR_agsuqb.jpg",
+        caption: "View of the river",
+        location: "New River Gorge National Park and Preserve, West Virginia"
+      },
+      {
+        url: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745313005/IMG_20221119_130239001_HDR_nkh0mg.jpg",
+        caption: "View of the river",
+        location: "New River Gorge National Park and Preserve, West Virginia"
+      },
+    ],
+    shortDescription: "New The New River Gorge National Park and Preserve is a stunning area known for its deep canyons, whitewater rapids, and serenity.",
+    description: "New River Gorge National Park and Preserve is located in West Virginia and is known for its stunning landscapes, and deep canyons. The park features the New River, which has carved a dramatic gorge through the Appalachian Mountains. Visitors can enjoy a variety of outdoor activities, including whitewater rafting, rock climbing, hiking, and birdwatching. The area is also home to diverse wildlife and offers opportunities to explore the region's coal mining history.",
+    wildlife: ["Black Bear", "White-Tailed Deer", "Wild Turkey"],
+    bestTimeToVisit: "Anytime",
+    personalNotes: "The newest national park in the United States. It's a beautiful place to visit and I highly recommend it. It's free to enter, which is a plus. The views are breathtaking and the hiking trails are well-maintained. I would highly recommend visiting New River Gorge National Park and Preserve if you're in the area."
   }
 ]
