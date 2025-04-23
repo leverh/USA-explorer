@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 import ScrollTopButton from '../components/ScrollTopButton/ScrollTopButton';
+import Modal from '../components/Modal/Modal';
 import './TravelDiaryPage.css';
 
 const diaryEntries = [
@@ -48,9 +49,17 @@ function TravelDiaryPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedTag, setSelectedTag] = useState('all');
   const [entries, setEntries] = useState(diaryEntries);
+  const [showModal, setShowModal] = useState(false);
   
   // Simulate loading and add fade-in effect
   useEffect(() => {
+    const hasSeenDiaryModal = localStorage.getItem('hasSeenDiaryModal');
+    
+    if (!hasSeenDiaryModal) {
+      setShowModal(true);
+      localStorage.setItem('hasSeenDiaryModal', 'true');
+    }
+    
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 500);
@@ -191,6 +200,14 @@ function TravelDiaryPage() {
               </div>
             </div>
           </section>
+          <Modal 
+            isOpen={showModal} 
+            onClose={() => setShowModal(false)} 
+            title="Demo Content"
+          >
+            <p>This Travel Diary page is a demonstration of what could be achieved with a travel blog. The journal entries shown here are examples only and do not represent my actual travels.</p>
+            <p>Only the Homepage contains my authentic travel experiences and photos. This page showcases the potential format and features for documenting travel stories.</p>
+          </Modal>
         </main>
       )}
       <Footer />

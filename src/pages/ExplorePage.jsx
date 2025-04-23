@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 import ScrollTopButton from '../components/ScrollTopButton/ScrollTopButton';
+import Modal from '../components/Modal/Modal';
 import Map from '../components/Map/Map';
 import { parks } from '../data/parks';
 import './ExplorePage.css';
@@ -11,10 +12,18 @@ function ExplorePage() {
   const [isLoading, setIsLoading] = useState(true);
   const [activeRegion, setActiveRegion] = useState('all');
   const [activeActivity, setActiveActivity] = useState('all');
-  const [displayType, setDisplayType] = useState('map'); // 'map' or 'list'
+  const [displayType, setDisplayType] = useState('map');
+  const [showModal, setShowModal] = useState(false);
   
   // Simulate loading and add fade-in effect
   useEffect(() => {
+    const hasSeenExploreModal = localStorage.getItem('hasSeenExploreModal');
+    
+    if (!hasSeenExploreModal) {
+      setShowModal(true);
+      localStorage.setItem('hasSeenExploreModal', 'true');
+    }
+    
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 500);
@@ -175,6 +184,14 @@ function ExplorePage() {
               </div>
             </div>
           </section>
+          <Modal 
+            isOpen={showModal} 
+            onClose={() => setShowModal(false)} 
+            title="Demo Content"
+          >
+            <p>This Explore page is a demonstration of what could be achieved with this website. The content shown here is for example purposes only.</p>
+            <p>Only the Homepage contains my actual travel experiences and photos. The interactive map and filtering features showcase the potential functionality for a complete travel blog.</p>
+          </Modal>
         </main>
       )}
       <Footer />
