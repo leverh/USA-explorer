@@ -1,4 +1,5 @@
-import { useState, useEffect, document  } from 'react';
+import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
@@ -17,34 +18,34 @@ function AboutPage() {
     return () => clearTimeout(timer);
   }, []);
 
-  document.title = "About USA Explorer | My Journey Through America's Natural Wonders";
-  document.meta.add({ name: "description", content: "Learn about my personal journey exploring America's national parks, forests, and natural landscapes over the past 7 years." });
-  document.meta.add({ name: "keywords", content: "travel stories, national park experiences, USA travel, outdoor adventures" });
-  document.meta.add({ property: "og:title", content: "About USA Explorer | My Journey" });
-  document.meta.add({ property: "og:description", content: "Learn about my 7-year journey exploring America's parks and natural landscapes." });
-  document.meta.add({ property: "og:type", content: "profile" });
-  document.meta.add({ property: "og:url", content: "https://flourishing-treacle-e276f2.netlify.app/about" });
-  document.meta.add({ 
-  property: "og:image", 
-  content: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1741249524/media/images/chanel1_tg0bos.jpg" 
-  });
-  document.link.add({ rel: "canonical", href: "https://flourishing-treacle-e276f2.netlify.app/about" });
   
   return (
     <>
+    <Helmet>
+        <title>About USA Explorer | My Journey Through America's Natural Wonders</title>
+        <meta name="description" content="Learn about my personal journey exploring America's national parks, forests, and natural landscapes over the past 7 years." />
+        <meta name="keywords" content="travel stories, national park experiences, USA travel, outdoor adventures" />
+        <link rel="canonical" href="https://flourishing-treacle-e276f2.netlify.app/about" />
+        <meta property="og:title" content="About USA Explorer | My Journey" />
+        <meta property="og:description" content="Learn about my 7-year journey exploring America's parks and natural landscapes." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://flourishing-treacle-e276f2.netlify.app/about" />
+        <meta property="og:image" content="https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1741249524/media/images/chanel1_tg0bos.jpg" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+      </Helmet>
       <Navigation />
       {isLoading ? (
-        <div className="loading-page">
+        <div className="loading-page" role="status" aria-live="polite">
           <LoadingSpinner size="large" />
         </div>
       ) : (
-        <main id="main-content" className="about-page fade-in">
+        <main id="main-content" className="about-page fade-in" aria-label="Main content of the About page">
           <header className="about-header">
             <h1>About USA Explorer</h1>
             <div className="about-subtitle">My journey through America's natural wonders</div>
           </header>
           
-          <section className="about-section">
+          <section className="about-section" aria-labelledby="who-i-am">
             <div className="about-image-container">
               <img 
                 src="https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1741249524/media/images/chanel1_tg0bos.jpg" 
@@ -64,7 +65,7 @@ function AboutPage() {
             </div>
           </section>
           
-          <section className="about-section reverse">
+          <section className="about-section reverse" aria-label="Story of how the creator started exploring national parks">
             <div className="about-image-container">
               <img 
                 src="https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745331308/IMG_20191012_153734-EFFECTS_l1hboo.jpg" 
@@ -84,7 +85,7 @@ function AboutPage() {
             </div>
           </section>
           
-          <section className="about-section full-width">
+          <section className="about-section full-width" aria-label="Reasons for building the USA Explorer website">
             <div className="about-content centered">
               <h2>Why This Website</h2>
               <p>
@@ -100,7 +101,7 @@ function AboutPage() {
           </section>
           
           
-          <section className="about-facts">
+          <section className="about-facts" aria-label="Quick statistics about parks visited, states explored, and travel history">
             <h2>Quick Facts</h2>
             <div className="facts-grid">
               <div className="fact-card">
@@ -122,13 +123,17 @@ function AboutPage() {
             </div>
           </section>
           
-          <section className="contact-section">
+          <section className="contact-section" aria-label="Contact section for reaching out to the site creator">
             <h2>Get In Touch</h2>
             <p>
               Have questions about my travels or want to share your own park experiences? 
               I'd love to hear from you!
             </p>
-            <a href="mailto:contact@pixelsummit.dev" className="contact-button">
+            <a 
+              href="mailto:contact@pixelsummit.dev" 
+              className="contact-button"
+              aria-label="Send me a message via email"
+            >
               Send me a message
             </a>
           </section>

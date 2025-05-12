@@ -1,5 +1,6 @@
-import { useState, useEffect, document  } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import * as Tabs from '@radix-ui/react-tabs';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
@@ -15,33 +16,6 @@ function ParkPage() {
   const [activeTab, setActiveTab] = useState('about');
  
   const park = parks.find(p => p.id === parkId);
-  document.title = `${park?.name} | USA Explorer`;
-  document.meta.add({ name: "description", content: `Explore ${park?.name} in ${park?.state}. View photos, wildlife information, and personal experiences from this beautiful park.` });
-  document.meta.add({ name: "keywords", content: `${park?.name}, ${park?.state} parks, hiking, wildlife, outdoor adventures` });
-  document.meta.add({ property: "og:title", content: `${park?.name} | USA Explorer` });
-  document.meta.add({ property: "og:description", content: `Explore ${park?.name} in ${park?.state}. Personal stories and photos from this beautiful American park.` });
-  document.meta.add({ property: "og:type", content: "article" });
-  document.meta.add({ property: "og:url", content: `https://flourishing-treacle-e276f2.netlify.app/park/${parkId}` });
-  document.meta.add({ property: "og:image", content: park?.thumbnailUrl || park?.images[0]?.url });
-  document.link.add({ rel: "canonical", href: `https://flourishing-treacle-e276f2.netlify.app/park/${parkId}` });
-
-  if (park) {
-    document.script.add({
-      type: "application/ld+json",
-      content: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "TouristAttraction",
-        "name": park.name,
-        "description": park.description,
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": park.state,
-          "addressCountry": "US"
-        },
-        "image": park.images.map(img => img.url)
-      })
-    });
-  }
  
   // Simulate loading and add fade-in effect
   useEffect(() => {
@@ -75,6 +49,33 @@ function ParkPage() {
  
   return (
     <>
+    <Helmet>
+        <title>{park.name} | USA Explorer</title>
+        <meta name="description" content={`Explore ${park.name} in ${park.state}. View photos, wildlife information, and personal experiences from this beautiful park.`} />
+        <meta name="keywords" content={`${park.name}, ${park.state} parks, hiking, wildlife, outdoor adventures`} />
+        <link rel="canonical" href={`https://flourishing-treacle-e276f2.netlify.app/park/${parkId}`} />
+        <meta property="og:title" content={`${park.name} | USA Explorer`} />
+        <meta property="og:description" content={`Explore ${park.name} in ${park.state}. Personal stories and photos from this beautiful American park.`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://flourishing-treacle-e276f2.netlify.app/park/${parkId}`} />
+        <meta property="og:image" content={park.thumbnailUrl || park.images[0]?.url} />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        
+        <script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": park.name,
+    "description": park.description,
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": park.state,
+      "addressCountry": "US"
+    },
+    "image": park.images?.map(img => img.url) || []
+  })}
+</script>
+      </Helmet>
       <Navigation />
       {isLoading ? (
         <div className="loading-page">

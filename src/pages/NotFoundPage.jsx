@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import './NotFoundPage.css';
@@ -6,6 +7,11 @@ import './NotFoundPage.css';
 function NotFoundPage() {
   return (
     <>
+    <Helmet>
+        <title>Page Not Found | USA Explorer</title>
+        <meta name="description" content="The page you're looking for doesn't exist. Explore our site to discover America's national parks and natural wonders." />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <Navigation />
       <main className="not-found-page">
         <div className="not-found-container">

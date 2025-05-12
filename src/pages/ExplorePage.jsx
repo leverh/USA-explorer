@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
@@ -45,6 +46,18 @@ function ExplorePage() {
   
   return (
     <>
+    <Helmet>
+        <title>Explore Parks by Region & Activity | USA Explorer</title>
+        <meta name="description" content="Discover America's national parks and natural wonders filtered by region, activity, and features. Interactive map and list views available." />
+        <meta name="keywords" content="explore US parks, national park activities, US regions, park map, wildlife viewing, hiking trails" />
+        <link rel="canonical" href="https://flourishing-treacle-e276f2.netlify.app/explore" />
+        <meta property="og:title" content="Explore America's Parks | USA Explorer" />
+        <meta property="og:description" content="Interactive tools to discover national parks by region, activity and features. Find your next outdoor adventure." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://flourishing-treacle-e276f2.netlify.app/explore" />
+        <meta property="og:image" content="https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745313000/IMG_20221119_130356215_HDR_agsuqb.jpg" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+      </Helmet>
       <Navigation />
       {isLoading ? (
         <div className="loading-page">

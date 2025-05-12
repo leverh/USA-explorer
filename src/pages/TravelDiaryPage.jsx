@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
@@ -84,6 +85,18 @@ function TravelDiaryPage() {
   
   return (
     <>
+    <Helmet>
+        <title>Travel Diary & Adventures | USA Explorer</title>
+        <meta name="description" content="Chronicles of adventures through America's natural wonders. Personal stories, photos, and experiences from national parks across the country." />
+        <meta name="keywords" content="travel diary, national park experiences, outdoor adventures, nature photography, park stories" />
+        <link rel="canonical" href="https://flourishing-treacle-e276f2.netlify.app/diary" />
+        <meta property="og:title" content="Travel Diary & Park Adventures | USA Explorer" />
+        <meta property="og:description" content="Personal stories and journals from adventures across America's most beautiful natural landscapes and national parks." />
+        <meta property="og:type" content="blog" />
+        <meta property="og:url" content="https://flourishing-treacle-e276f2.netlify.app/diary" />
+        <meta property="og:image" content="https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745399232/IMG_20191010_155750_yaa5mi.jpg" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+      </Helmet>
       <Navigation />
       {isLoading ? (
         <div className="loading-page">
