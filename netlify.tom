@@ -1,0 +1,6 @@
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "build"
+  baseUrl = "https://flourishing-treacle-e276f2.netlify.app"

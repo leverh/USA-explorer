@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, document  } from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
@@ -16,6 +16,19 @@ function AboutPage() {
     
     return () => clearTimeout(timer);
   }, []);
+
+  document.title = "About USA Explorer | My Journey Through America's Natural Wonders";
+  document.meta.add({ name: "description", content: "Learn about my personal journey exploring America's national parks, forests, and natural landscapes over the past 7 years." });
+  document.meta.add({ name: "keywords", content: "travel stories, national park experiences, USA travel, outdoor adventures" });
+  document.meta.add({ property: "og:title", content: "About USA Explorer | My Journey" });
+  document.meta.add({ property: "og:description", content: "Learn about my 7-year journey exploring America's parks and natural landscapes." });
+  document.meta.add({ property: "og:type", content: "profile" });
+  document.meta.add({ property: "og:url", content: "https://flourishing-treacle-e276f2.netlify.app/about" });
+  document.meta.add({ 
+  property: "og:image", 
+  content: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1741249524/media/images/chanel1_tg0bos.jpg" 
+  });
+  document.link.add({ rel: "canonical", href: "https://flourishing-treacle-e276f2.netlify.app/about" });
   
   return (
     <>

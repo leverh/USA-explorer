@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, document  } from 'react';
 import { Link } from 'react-router-dom';
 import Map from '../components/Map/Map';
 import Navigation from '../components/Navigation/Navigation';
@@ -27,6 +27,20 @@ function HomePage() {
     : parks.filter(park => park.state === filter);
     
   const states = [...new Set(parks.map(park => park.state))].sort();
+
+  document.title = "USA Explorer | Journey Through America's National Parks";
+  document.meta.add({ name: "description", content: "Explore America's national parks, cities, and natural wonders through a personal journey of discovery and adventure." });
+  document.meta.add({ name: "keywords", content: "national parks, USA travel, hiking, nature photography, American wilderness" });
+  document.meta.add({ property: "og:title", content: "USA Explorer | America's Natural Wonders" });
+  document.meta.add({ property: "og:description", content: "Explore America's national parks and natural beauty through a personal journey." });
+  document.meta.add({ property: "og:type", content: "website" });
+  document.meta.add({ property: "og:url", content: "https://flourishing-treacle-e276f2.netlify.app/" });
+  document.meta.add({ 
+  property: "og:image", 
+  content: "https://res.cloudinary.com/dybqzflbo/image/upload/f_auto,q_auto/v1745331308/IMG_20191012_153734-EFFECTS_l1hboo.jpg" 
+});
+  document.link.add({ rel: "canonical", href: "https://flourishing-treacle-e276f2.netlify.app/" });
+
   
   return (
     <>

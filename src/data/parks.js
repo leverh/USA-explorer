@@ -599,7 +599,7 @@ export const parks = [
     personalNotes: "I loved how the forest seemed to go on forever, with winding roads that revealed new views around every bend. The mix pine groves and jagged rock formations are really beautiful. This is again a location I discovered by accident as I was driving east from Wyoming. Next time I'm there, I'll stop for more than just a day."
   },
   {
-    id: "pisgah ",
+    id: "pisgah",
     name: "Pisgah National Forest",
     state: "North Carolina",
     established: "October 17, 1916",
