@@ -111,8 +111,6 @@ This project is licensed under the MIT License.
 
 ## 📧 Contact
 
- Name - [PixelSummit](mailto:contact@pixelsummit.dev)
-
 Project Link: [https://flourishing-treacle-e276f2.netlify.app/](https://flourishing-treacle-e276f2.netlify.app/)
 
 Github Link: [https://github.com/leverh/USA-explorer](https://github.com/leverh/USA-explorer)
