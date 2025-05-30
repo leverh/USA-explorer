@@ -107,7 +107,9 @@ To add new parks, edit the `src/data/parks.js` file following the existing data 
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. Copy or share - I really don't care 🖖✌️
+
+Special Note on Images: The images used in this application are photographs of my personal trips and are NOT included in the open-source license. All images are copyright protected and may not be used, reproduced, distributed, or modified without explicit written permission. While you are welcome to fork and modify the code for your own projects, please replace the images with your own.
 
 ## 📧 Contact
 
